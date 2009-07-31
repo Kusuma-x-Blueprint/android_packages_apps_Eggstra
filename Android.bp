@@ -15,4 +15,8 @@ android_app {
     certificate: "platform",
     system_ext_specific: true,
     privileged: true,
+
+    static_libs: [
+        "androidx.annotation_annotation",
+    ],
 }
