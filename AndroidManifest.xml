@@ -7,5 +7,11 @@
     package="com.kusumaos.egg"
     android:versionCode="1"
     android:versionName="1.0">
-    <application/>
+    <application>
+        <activity 
+            android:name="com.android.internal.app.PlatLogoActivity"
+            android:theme="@style/Theme.Wallpaper.NoTitleBar.Fullscreen"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+    </application>
 </manifest>
