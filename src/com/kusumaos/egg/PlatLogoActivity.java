@@ -21,7 +21,6 @@ import android.animation.ObjectAnimator;
 import android.annotation.Nullable;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
-import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Canvas;
@@ -39,7 +38,6 @@ import android.graphics.drawable.RippleDrawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -135,18 +133,6 @@ public class PlatLogoActivity extends Activity {
                     public boolean onLongClick(View v) {
                         if (mTapCount < 5) return false;
 
-                        final ContentResolver cr = getContentResolver();
-                        if (Settings.System.getLong(cr, Settings.System.EGG_MODE, 0)
-                                == 0) {
-                            // For posterity: the moment this user unlocked the easter egg
-                            try {
-                                Settings.System.putLong(cr,
-                                        Settings.System.EGG_MODE,
-                                        System.currentTimeMillis());
-                            } catch (RuntimeException e) {
-                                Log.e("PlatLogoActivity", "Can't write settings", e);
-                            }
-                        }
                         im.post(new Runnable() {
                             @Override
                             public void run() {
