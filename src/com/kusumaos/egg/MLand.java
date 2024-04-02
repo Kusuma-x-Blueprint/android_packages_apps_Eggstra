@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.systemui.egg;
+package com.kusumaos.egg;
 
 import android.animation.LayoutTransition;
 import android.animation.TimeAnimator;
@@ -52,7 +52,7 @@ import java.util.ArrayList;
 
 import com.android.internal.logging.MetricsLogger;
 
-import com.android.systemui.R;
+import com.kusumaos.egg.R;
 
 // It's like LLand, but "M"ultiplayer.
 public class MLand extends FrameLayout {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.internal.app;
+package com.kusumaos.egg;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -89,7 +89,7 @@ public class PlatLogoActivity extends Activity {
         bgPaint.setColor(Color.HSBtoColor(hue, 0.4f, 1f));
         final Paint fgPaint = new Paint();
         fgPaint.setColor(Color.HSBtoColor(hue, 0.5f, 1f));
-        final Drawable M = getDrawable(com.android.internal.R.drawable.platlogo_m);
+        final Drawable M = getDrawable(com.kusumaos.egg.R.drawable.platlogo_m);
         final Drawable platlogo = new Drawable() {
             @Override
             public void setAlpha(int alpha) { }
@@ -202,7 +202,7 @@ public class PlatLogoActivity extends Activity {
     }
 
     public void showMarshmallow(View im) {
-        final Drawable fg = getDrawable(com.android.internal.R.drawable.platlogo);
+        final Drawable fg = getDrawable(com.kusumaos.egg.R.drawable.platlogo);
         fg.setBounds(0, 0, im.getWidth(), im.getHeight());
         fg.setAlpha(0);
         im.getOverlay().add(fg);

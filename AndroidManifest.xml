@@ -12,12 +12,12 @@
 
     <application>
         <activity 
-            android:name="com.android.internal.app.PlatLogoActivity"
+            android:name=".PlatLogoActivity"
             android:theme="@style/Theme.Wallpaper.NoTitleBar.Fullscreen"
             android:configChanges="orientation|keyboardHidden">
         </activity>
 
-        <activity android:name=".egg.MLandActivity"
+        <activity android:name=".MLandActivity"
                   android:theme="@android:style/Theme.Material.NoActionBar"
                   android:exported="true"
                   android:icon="@drawable/icon"
