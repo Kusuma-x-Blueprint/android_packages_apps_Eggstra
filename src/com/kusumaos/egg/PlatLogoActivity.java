@@ -215,7 +215,7 @@ public class PlatLogoActivity extends Activity {
         fadeIn.start();
     }
 
-    public static float constrain(float amount, float low, float high) {
+    private static float constrain(float amount, float low, float high) {
         return amount < low ? low : (amount > high ? high : amount);
     }
 
@@ -230,7 +230,7 @@ public class PlatLogoActivity extends Activity {
      * 
      * @hide Pending API council
      */
-    public static int HSBtoColor(float[] hsb) {
+    private static int HSBtoColor(float[] hsb) {
         return HSBtoColor(hsb[0], hsb[1], hsb[2]);
     }
 
@@ -247,7 +247,7 @@ public class PlatLogoActivity extends Activity {
      * 
      * @hide Pending API council
      */
-    public static int HSBtoColor(float h, float s, float b) {
+    private static int HSBtoColor(float h, float s, float b) {
         h = constrain(h, 0.0f, 1.0f);
         s = constrain(s, 0.0f, 1.0f);
         b = constrain(b, 0.0f, 1.0f);
