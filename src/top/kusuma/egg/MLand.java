@@ -961,7 +961,7 @@ public class MLand extends FrameLayout {
 
         if (!DEBUG_DRAW) return;
 
-        final Paint pt = new Paint();
+        final Paint pt = new Paint(Paint.ANTI_ALIAS_FLAG);
         pt.setColor(0xFFFFFFFF);
         for (Player p : mPlayers) {
             final int L = p.corners.length;
@@ -1307,7 +1307,7 @@ public class MLand extends FrameLayout {
     }
 
     private class Stem extends Obstacle {
-        Paint mPaint = new Paint();
+        Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         Path mShadow = new Path();
         GradientDrawable mGradient = new GradientDrawable();
         boolean mDrawShadow;
@@ -1328,7 +1328,7 @@ public class MLand extends FrameLayout {
             if (frand() < 0.01f) {
                 mGradient.setColors(new int[]{0xFFFFFFFF, 0xFFDDDDDD});
                 mJandystripe = new Path();
-                mPaint2 = new Paint();
+                mPaint2 = new Paint(Paint.ANTI_ALIAS_FLAG);
                 mPaint2.setColor(0xFFFF0000);
                 mPaint2.setColorFilter(new PorterDuffColorFilter(0xFFFF0000, PorterDuff.Mode.MULTIPLY));
             } else {

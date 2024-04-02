@@ -85,9 +85,9 @@ public class PlatLogoActivity extends Activity {
             }
         });
         final float hue = (float) Math.random();
-        final Paint bgPaint = new Paint();
+        final Paint bgPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         bgPaint.setColor(HSBtoColor(hue, 0.4f, 1f));
-        final Paint fgPaint = new Paint();
+        final Paint fgPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         fgPaint.setColor(HSBtoColor(hue, 0.5f, 1f));
         final Drawable M = getDrawable(top.kusuma.egg.R.drawable.platlogo_m);
         final Drawable platlogo = new Drawable() {
