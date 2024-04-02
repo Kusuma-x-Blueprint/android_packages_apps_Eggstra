@@ -137,7 +137,7 @@ public class PlatLogoActivity extends Activity {
                             @Override
                             public void run() {
                                 try {
-                                    startActivity(new Intent(Intent.ACTION_MAIN)
+                                    startActivity(new Intent("com.kusumaos.egg.EASTER_EGG")
                                             .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                                                     | Intent.FLAG_ACTIVITY_CLEAR_TASK
                                                     | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS)
