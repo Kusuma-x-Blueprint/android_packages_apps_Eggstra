@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.systemui.egg;
+package top.kusuma.egg;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.android.systemui.R;
+import top.kusuma.egg.R;
 
 public class MLandActivity extends Activity {
     MLand mLand;
