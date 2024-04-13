@@ -19,11 +19,11 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
         >
-    <com.android.systemui.egg.MLand
+    <top.kusuma.egg.MLand
             android:id="@+id/world"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-    </com.android.systemui.egg.MLand>
+    </top.kusuma.egg.MLand>
     <FrameLayout
             android:id="@+id/welcome"
             android:layout_width="match_parent"
